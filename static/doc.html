@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Documentation - Rocket Translator</title>
+	<link rel="stylesheet" href="css/prism.css"/>
+</head>
+<body>
+	<h1>RocketJS - Docs</h1>
+	<aside>
+		<ul>
+			<li>Getting Started</li>
+			<li>States</li>
+			<li>Methods</li>
+			<li>Methods Computed</li>
+			<li>Props</li>
+			<li>Components</li>
+			<li>Javascript Management</li>
+			<li>To Do</li>
+		</ul>
+	</aside>
+	<div id="Main">
+		<div>
+			<h3>Informacion</h3>
+			<p>Esta Guia es para desarrolladores con experiencia en VueJS o ReactJS, y tratamos de explicar las bases de estos frameworks (Estados, Metodos, Ciclos de vida, Etc...) para ayudar a los desarrolladores nuevos en estos frameworks.</p>
+
+			<h3>¿Que es RocketJS?</h3>
+			<p>RocketJS es un proyecto desarrollado para ayudar la exportación de diseños HTML a las plataformas de VueJS y ReactJS. Nuestra misión es facilitar el desarrollo para los nuevos programadores, y brindar una forma rapida de exportar el diseño de HTML.</p>
+			<h3>Getting Started</h3>
+			<p>RocketJS usa una sitaxis <b>"Nombre - Tipo - Valor"</b> para asignar datos que afecten el DOM
+				<pre style="white-space: pre-line;">
+						<code style="white-space: pre-wrap;" class="lang-html">&lt;h1&gt;Hello {name - state - "World"}!&lt;/h1&gt;</code>
+				</pre>
+				El nombre es el que se usara para asignarle al estado del componente.<br>
+				El tipo puede ser:
+				<ul>
+					<li>"state": Estado de la aplicacion</li>
+					<li>"computed": Funcion que retorna un valor que afecta el DOM</li>
+					<li>"prop": Estado pasado desde el componente padre.</li>
+				</ul>
+				El valor puede ser: <b>String</b>, <b>Number</b>, <b>Boolean</b>, <b>Array</b>, <b>Object</b> y <b>variables</b>, estas se asignan dentro del javascript.
+			</p>
+		</div>
+	</div>
+	<script src="js/prism.js"></script>
+</body>
+</html>

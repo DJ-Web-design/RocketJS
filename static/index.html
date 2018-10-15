@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rocket - The HTML Translator</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+</head>
+<body>
+	<header id="header">
+		<div id="menu">
+			<ul>
+				<li><a href="/editor">Start Coding</a></li>
+				<li><a href="/docs">Documentation</a></li>
+				<li><a href="https://github.com/DJ-Web-design/rocket-translator">GitHub</a></li>
+			</ul>
+		</div>
+		<h1 id="title">Rocket.</h1>
+		<p>The HTML Translator.</p>
+		<div>
+			<a href="/editor">Start Coding</a>
+			<a href="/docs">Documentation</a>
+		</div>
+	</header>
+	<div id="content">
+		<h2>Translate HTML to Vue or React.</h2>
+		Rocket is a code translator, that with a few changes, you can transform this:
+		<pre style="white-space: pre-line;" class="line-numbers">
+			<code style="white-space: pre-wrap;" class="lang-html">&lt;h1&gt;Hello {name - state - "World"}!&lt;/h1&gt;</code>
+		</pre>
+		Into this:
+		<pre style="white-space: pre-line;" class="line-numbers" data-language="Vue JS">
+			<code style="white-space: pre-wrap;" class="language-html">&lt;template&gt;
+	&lt;h1&gt;Hello {{name}}!&lt;/h1&gt;
+&lt;/template&gt;
+&lt;script&gt;
+	export default {
+		data(){
+			return {
+				name:"World"
+			}
+		}
+	}
+&lt;/script&gt;</code>
+		</pre>
+		Or this:
+		<pre style="white-space: pre-line;" class="line-numbers">
+			<code style="white-space: pre-wrap;" class="language-jsx">import React, {Component} from "react";
+class MyComponent extends Component {
+	constructor(){
+		super();
+		this.state = {
+			name: "World"
+		}
+	}
+	render(){
+		return(
+			&lt;h1&gt;Hello {this.state.name}!&lt;/h1&gt;
+		)
+	}
+}
+export default MyComponent;</code>
+		</pre>
+		You can choice!.
+		<br/>
+		<br/>
+		Our vision is help to new developers to export the HTML design to Vue or React, and bring a quikly form to export these designs. 
+		<h3>List of Features</h3>
+		<ul id="features-list">
+			<li>Auto get states from the HTML template.</li>
+			<li>Set event listeners to buttons, forms, etc...</li>
+			<li>Auto set computed methods</li>
+			<li>Auto import components</li>
+			<li>You can change javascript default functions code.</li>
+			<li>Auto declare states without put on template.</li>
+			<li>Set state watchers (Vue)</li>
+			<li>Set input handlers</li>
+			<li>Use Keyword <code class="lang-javascript">state</code> to declare component states into javascript</li>
+			<li>Use keyword <code class="lang-javascript">watch</code> to set state watchers on vue.</li>
+			<li>Auto set type of state value</li>
+			<li>Asign vars to states</li>
+		</ul>
+		<span id="note">Note: This traductor is for new developers or to export the HTML code quikly.</span>
+	</div>
+	<footer>
+		<ul></ul>
+	</footer>
+	<script src="js/prism.js"></script>
+</body>
+</html>

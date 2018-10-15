@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #56445D;
+}
+#title {
+	color: white;
+	text-align: center;
+}
+#content {
+	text-align: center;
+	background: #f7f7f7;
+	overflow: hidden;
+	width: 65%;
+	margin: 400px auto 50px auto;
+	padding: 50px 10%;
+}
+li {
+	text-align: left;
+}
+#menu {
+	background: white;
+	position: relative;
+	height: 50px;
+}
+#menu ul {
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+#menu ul li {
+	display: inline-block;
+}
+#image-composition {
+	margin: 100px;
+	position: relative;
+	height: 400px;
+}
+#HTML5_Planet {
+	width: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 250px;
+}
+#Vue_Planet {
+	position: absolute;
+	width: 150px;
+	top: 100px;
+	right: 200px;
+}
+#React_Planet {
+	position: absolute;
+	width: 150px;
+	top: 0;
+	right: 300px;
+}
+#Rocket {
+	position: absolute;
+	top: 200px;
+	left:400px;
+	width: 100px;
+}
